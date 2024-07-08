@@ -38,6 +38,8 @@ console.log(
   }),
 )
 from math import floor
+
+count_occurrences([1, 1, 2, 1, 2, 3], 1) # 3
 difference_by([2.1, 1.2], [2.3, 3.4],floor) # [1.2]
 difference_by([{ 'x': 2 }, { 'x': 1 }], [{ 'x': 1 }], lambda v : v['x']) # [ { x: 2 } ]
 
