@@ -44,3 +44,17 @@ difference_by([2.1, 1.2], [2.3, 3.4],floor) # [1.2]
 difference_by([{ 'x': 2 }, { 'x': 1 }], [{ 'x': 1 }], lambda v : v['x']) # [ { x: 2 } ]
 
 difference([1, 2, 3], [1, 2, 4]) # [3]
+
+Array.prototype.likeFilter = function (f) {
+  let re = []
+  this.forEach((e) => {
+    if (f(e)) {
+      re.push(e)
+    }
+  })
+  return re
+}
+
+const arr = [1, 2, 3, 4, 5, 6]
+
+console.log(arr.likeFilter((value) => value % 2 == 0)) // [2, 4, 6]
