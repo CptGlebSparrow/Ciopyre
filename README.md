@@ -46,3 +46,8 @@ difference_by([{ 'x': 2 }, { 'x': 1 }], [{ 'x': 1 }], lambda v : v['x']) # [ { x
 difference([1, 2, 3], [1, 2, 4]) # [3]
 
 
+document
+  .querySelectorAll('.top_notify_cont .ui_actions_menu')
+  .forEach((elem) => {
+    elem.childNodes[0].click()
+  })
