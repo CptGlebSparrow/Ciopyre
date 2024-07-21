@@ -51,3 +51,8 @@ document
   .forEach((elem) => {
     elem.childNodes[0].click()
   })
+//////
+/
+/
+/
+/
